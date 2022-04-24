@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Web3Modal from "web3modal";
 import { nftAddress, nftMarketAddress } from "../config.js";
-import NFT from "../artifacts/contracts/NFT.sol/NFT.json";
-import Market from "../artifacts/contracts/NFTMarket.sol/NFTMarket.json";
+import NFT from "../abis/NFT.sol/NFT.json";
+import Market from "../abis/NFTMarket.sol/NFTMarket.json";
 
 export default function Home() {
   const [nfts, setNFTs] = useState([]);
